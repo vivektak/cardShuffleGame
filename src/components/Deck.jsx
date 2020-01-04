@@ -12,6 +12,7 @@ const Deck = (props) => {
 
                         <div
                             className="col-4"
+                            key={card.code}
                             onClick={() => {
                                 props.handleCardClick(card.code, props.deckNumber);
                             }}

@@ -1,9 +1,8 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import Axios from 'axios';
 
 const http = {
-    get: async function (url) {
-        return await Axios.get('http://localhost:3000/api/' + url)
-    }
-}
+  get: (url) => Axios.get(`http://localhost:3000/api/${url}`),
+};
 
 export default http;
